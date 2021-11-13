@@ -57,18 +57,19 @@
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
+        background-image: url('/Rolery/images/banner.webp');
       }
     
     
       @media(min-width:768px) {
         body.custom-background {
-          background-image: url('/images/bg.webp');
+          background-image: url('/Rolery/images/bg.webp');
         }
       }
     
   </style>
   
+  <script type="text/javascrip" charset="utf-8" async="" src="/Rolery/js/L2Dwidget.0.min.js"></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -200,7 +201,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" />
+            <img class="about-photo" src="/Rolery/images/lan.png" />
         </div>
     </div>
     <div class="textwidget">
@@ -269,12 +270,12 @@
                     <ul class="kratos-social-icons">
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/jiang rooler"><i class="fa fa-telegram"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/r0lery"><i class="fa fa-telegram"></i></a></li>
                         
                         
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://github.com/Rolery"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/rolery"><i class="fa fa-github"></i></a></li>
                         
                     </ul>
                     <ul class="kratos-copyright">
@@ -344,7 +345,30 @@
 
 <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/Rolery/js/kratosr.min.js"></script>
+<script type="text/javascript" src="/Rolery/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+	L2Dwidget.init({
+            dialog: {
+                // 开启对话框
+                enable: true,
+                script: {
+                    // 当触摸到角色身体
+                    'tap body': '诶！别乱碰！',
+                    // 当触摸到角色头部
+                    'tap face': '我在好好学习呢！',
+                }
+            },
+            display: {
+                position: 'right'
+            },
+            "model": { "jsonPath": 
+window.location.host+"/Rolery/haruto" + "/assets/" + "haruto.model.json" },
+            "mobile": { "show": true, scale: 0.5 },
+        });
+</script>
 <script defer src="/Rolery/js/pjax.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 

@@ -62,18 +62,19 @@
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
+        background-image: url('/Rolery/images/banner.webp');
       }
     
     
       @media(min-width:768px) {
         body.custom-background {
-          background-image: url('/images/bg.webp');
+          background-image: url('/Rolery/images/bg.webp');
         }
       }
     
   </style>
   
+  <script type="text/javascrip" charset="utf-8" async="" src="/Rolery/js/L2Dwidget.0.min.js"></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -242,7 +243,7 @@
 <h3 id="Footer-页脚显示相关"><a href="#Footer-页脚显示相关" class="headerlink" title="- Footer 页脚显示相关"></a>- Footer 页脚显示相关</h3><ul>
 <li><p><strong>group_link</strong> : 控制是否在页面右下角显示群聊的加入按钮。如果显示的话，这里可以指定加群的链接。无需显示的话请留空（而<em>不是</em>删除这个设置项），相关的代码会自行处理结构生成关系。</p>
 </li>
-<li><p><strong>contact</strong> : 联系方式相关，控制是否在页脚(./kratos-rebirth/layout/_partial/footer.ejs)显示各种联系方式的按钮<br>如果要启用的话，请输入相关联系方式的代码，直接输入用户名即可（fediverse的实例需要输入实例地址，邮箱请使用<a href="mailto:&#x6d;&#97;&#x69;&#x6c;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;">&#x6d;&#97;&#x69;&#x6c;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;</a>这样的格式）；无需显示的内容请留空。</p>
+<li><p><strong>contact</strong> : 联系方式相关，控制是否在页脚(./kratos-rebirth/layout/_partial/footer.ejs)显示各种联系方式的按钮<br>如果要启用的话，请输入相关联系方式的代码，直接输入用户名即可（fediverse的实例需要输入实例地址，邮箱请使用<a href="mailto:&#x6d;&#97;&#105;&#108;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#109;">&#x6d;&#97;&#105;&#108;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#109;</a>这样的格式）；无需显示的内容请留空。</p>
 </li>
 <li><p><strong>timenotice</strong> : 本站运行时间前的提示文本。</p>
 </li>
@@ -487,6 +488,8 @@
             
                 <div class="post-like-donate text-center clearfix" id="post-like-donate">
                 
+                    <a class="donate" href="javascript:;"><i class="fa fa-bitcoin"></i> 打赏</a>
+                
                 
                     <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
                     <div class="share-wrap" style="display: none;">
@@ -600,7 +603,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" />
+            <img class="about-photo" src="/Rolery/images/lan.png" />
         </div>
     </div>
     <div class="textwidget">
@@ -683,12 +686,12 @@
                     <ul class="kratos-social-icons">
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/jiang rooler"><i class="fa fa-telegram"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/r0lery"><i class="fa fa-telegram"></i></a></li>
                         
                         
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://github.com/Rolery"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/rolery"><i class="fa fa-github"></i></a></li>
                         
                     </ul>
                     <ul class="kratos-copyright">
@@ -758,7 +761,30 @@
 
 <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/Rolery/js/kratosr.min.js"></script>
+<script type="text/javascript" src="/Rolery/js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+	L2Dwidget.init({
+            dialog: {
+                // 开启对话框
+                enable: true,
+                script: {
+                    // 当触摸到角色身体
+                    'tap body': '诶！别乱碰！',
+                    // 当触摸到角色头部
+                    'tap face': '我在好好学习呢！',
+                }
+            },
+            display: {
+                position: 'right'
+            },
+            "model": { "jsonPath": 
+window.location.host+"/Rolery/haruto" + "/assets/" + "haruto.model.json" },
+            "mobile": { "show": true, scale: 0.5 },
+        });
+</script>
 <script defer src="/Rolery/js/pjax.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 
