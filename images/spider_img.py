@@ -36,9 +36,9 @@ for i in range(len(purp)):
     print('jpg'==purp[i][-3:] or 'png'==purp[i][-3:])
     if('jpg'==purp[i][-3:] or 'png'==purp[i][-3:]):
         r=session.get(purp[i],stream=True)
-        with open(r"./thumb1/thumb{}.{}".format(i+1,purp[i][-3:]),"wb") as f:
+        with open(r"./thumb/thumb{}.{}".format(i+1,purp[i][-3:]),"wb") as f:
             for chunk in r.iter_content(chunk_size=32):
                 f.write(chunk)
-        filename="./thumb1/thumb{}.{}".format(i+1,purp[i][-3:])
+        filename="./thumb/thumb{}.{}".format(i+1,purp[i][-3:])
         image=Image.open(filename)
         image.save(filename[:-3]+"png")

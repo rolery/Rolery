@@ -18,11 +18,11 @@
   <meta name="description" content="近期多次用到了010Editor的文件模板功能，想到自己还是在虚拟机里用大佬patch的老版本，遂决定自己尝试动手分析破解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="010Editor破解(0xac注册算法分析)">
-<meta property="og:url" content="https://rolery.github.io/Rolery/2021/11/09/010Editor/index.html">
+<meta property="og:url" content="https://roleryhome.tk/2021/11/09/010Editor/index.html">
 <meta property="og:site_name" content="Wolfram">
 <meta property="og:description" content="近期多次用到了010Editor的文件模板功能，想到自己还是在虚拟机里用大佬patch的老版本，遂决定自己尝试动手分析破解">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://rolery.github.io/Rolery/null">
+<meta property="og:image" content="https://roleryhome.tk/null">
 <meta property="article:published_time" content="2021-11-10T02:22:34.000Z">
 <meta property="article:modified_time" content="2022-01-18T10:13:34.807Z">
 <meta property="article:author" content="Rolery">
@@ -30,7 +30,7 @@
 <meta property="article:tag" content="ida">
 <meta property="article:tag" content="assembly">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://rolery.github.io/Rolery/null">
+<meta name="twitter:image" content="https://roleryhome.tk/null">
 <meta name="twitter:site" content="@null">
   
   <!-- 站点验证相关 -->
@@ -40,9 +40,9 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/Rolery/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
   
-    <link rel="stylesheet" id="highlight-css" href="/Rolery/css/highlight/night-bright.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-bright.min.css" type="text/css" media="all">
   
   
   <link rel="stylesheet" id="fontawe-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
@@ -74,7 +74,7 @@
     
   </style>
   
-  <script type="text/javascrip" charset="utf-8" async="" src="/Rolery/js/L2Dwidget.0.min.js"></script>
+  <script type="text/javascrip" charset="utf-8" async="" src="/js/L2Dwidget.0.min.js"></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -89,15 +89,15 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/Rolery/"><i class="fa fa-home"></i>首页</a></li>
+                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
                                     
                                 
                                     
-                                        <li><a href="/Rolery/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
                                     
                                 
                                     
-                                        <li><a href="/Rolery/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
+                                        <li><a href="/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
                                     
                                 
                                     
@@ -108,7 +108,7 @@
                                                     
                                                 
                                                     
-                                                        <li><a href="/Rolery/rolery">作者博客</a></li>
+                                                        <li><a href="/rolery">作者博客</a></li>
                                                     
                                                 
                                                     
@@ -126,7 +126,7 @@
             </header>
             <header id="kratos-mobile-topnav" class="kratos-topnav">
                 <div class="container">
-                    <div class="color-logo"><a href="/Rolery/">Wolfram</a></div>
+                    <div class="color-logo"><a href="/">Wolfram</a></div>
                     <div class="nav-toggle">
                         <a class="kratos-nav-toggle js-kratos-nav-toggle">
                             <i></i>
@@ -139,7 +139,7 @@
             <!-- <div class="kratos-overlay"></div> -->
             <div class="kratos-cover kratos-cover-2 text-center">
                 <div class="desc desc2 animate-box">
-                    <a href="/Rolery/">
+                    <a href="/">
                         <h2>Wolfram</h2> <br />
                         <span>hello world!</span>
                     </a>
@@ -287,7 +287,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://rolery.github.io/Rolery/2021/11/09/010Editor/",
+                text: "https://roleryhome.tk/2021/11/09/010Editor/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -299,7 +299,7 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://rolery.github.io/Rolery/2021/11/09/010Editor/";
+            const hostUrl       = "https://roleryhome.tk/2021/11/09/010Editor/";
             const title         = "「010Editor破解(0xac注册算法分析)」";
             const excerpt       = `近期多次用到了010Editor的文件模板功能，想到自己还是在虚拟机里用大佬patch的老版本，遂决定自己尝试动手分析破解`;
             let _URL;
@@ -320,7 +320,7 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/Rolery/tags/PE64/" rel="tag">PE64</a>, <a class="tag-none-link" href="/Rolery/tags/assembly/" rel="tag">assembly</a>, <a class="tag-none-link" href="/Rolery/tags/ida/" rel="tag">ida</a>
+                    <a class="tag-none-link" href="/tags/PE64/" rel="tag">PE64</a>, <a class="tag-none-link" href="/tags/assembly/" rel="tag">assembly</a>, <a class="tag-none-link" href="/tags/ida/" rel="tag">ida</a>
                 </div>
                 <div class="pull-date">
                 <span>最后编辑：2022-01-18</span>
@@ -375,7 +375,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/Rolery/categories/%E9%80%86%E5%90%91/">逆向</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%80%86%E5%90%91/">逆向</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -384,7 +384,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/Rolery/tags/PE64/" style="font-size: 0.6em;">PE64</a> <a href="/Rolery/tags/assembly/" style="font-size: 0.6em;">assembly</a> <a href="/Rolery/tags/ida/" style="font-size: 0.6em;">ida</a>
+        <a href="/tags/PE64/" style="font-size: 0.6em;">PE64</a> <a href="/tags/assembly/" style="font-size: 0.6em;">assembly</a> <a href="/tags/ida/" style="font-size: 0.6em;">ida</a>
       </div>
   </aside>
 
@@ -398,7 +398,7 @@
         
           
           
-            <a class="list-group-item" href="/Rolery/2021/11/09/010Editor/"><i class="fa  fa-book"></i> 010Editor破解(0xac注册算法分析)</a>
+            <a class="list-group-item" href="/2021/11/09/010Editor/"><i class="fa  fa-book"></i> 010Editor破解(0xac注册算法分析)</a>
             
           
         
@@ -454,7 +454,7 @@
             <div class="tool">
                 
                     <div class="box search-box">
-                        <a href="/Rolery/search/">
+                        <a href="/search/">
                             <span class="fa fa-search"></span>
                         </a>
                     </div>
@@ -478,16 +478,16 @@
         window.kr = {};
     }
     window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
-    window.kr.siteRoot = "/Rolery/";
+    window.kr.siteRoot = "/";
 </script>
 
     <div>
         <canvas id="snow"></canvas>
-        <script async type="text/javascript" src="/Rolery/js/snow.min.js"></script>
+        <script async type="text/javascript" src="/js/snow.min.js"></script>
     </div>
 
 
-    <script async src="/Rolery/js/candy.min.js"></script>
+    <script async src="/js/candy.min.js"></script>
 
 
 
@@ -495,8 +495,8 @@
     <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-<script defer src="/Rolery/js/kratosr.min.js"></script>
-<script type="text/javascript" src="/Rolery/js/L2Dwidget.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script type="text/javascript" src="/js/L2Dwidget.min.js"></script>
 <script type="text/javascript">
 	L2Dwidget.init({
             dialog: {
@@ -518,7 +518,7 @@
             "mobile": { "show": false, scale: 0.5 },
         });
 </script>
-<script defer src="/Rolery/js/pjax.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
 
 
 
